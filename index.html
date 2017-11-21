@@ -1,9 +1,506 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «Морда»</title>
-</head>
-<body>
-</body>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <title>Задача «Морда»</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <main class="layout">
+            <div class="top-line">
+                <a href="https://yandex.ru/tune" class="location top-line-items hovering">
+                    <span class="arrow">➤</span>Екатеринбург</a>
+                <div class="profile-wrapper">
+                    <div class="dropdown">
+                        <span class="settings hovering">Настройкa</span>
+                        <div class="dropdown-content">
+                            <div class="inputs">
+                                <label for="setting">
+                                    <span class="hovering">Погода</span>
+                                </label>
+                                <label for="setting1">
+                                    <span class="hovering">Посещаемое</span>
+                                </label>
+                                <label for="setting2">
+                                    <span class="hovering">Анекдоты</span>
+                                </label>
+                                <label for="setting3">
+                                    <span class="hovering">Пробки</span>
+                                </label>
+                                <label for="setting4">
+                                    <span class="hovering">Телепрограмма</span>
+                                </label>
+                                <label for="setting5">
+                                    <span class="hovering">Автомобильные новости</span>
+                                </label>
+                                <label for="setting6">
+                                    <span class="hovering">Карта Екатеринбурга</span>
+                                </label>
+                                <label for="setting7">
+                                    <span class="hovering">Афиша</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <span class="mail-address profile-element hovering">
+                            360mlgnoscope420blazeit@yandex.ru</span>
+                        <span class="avatar"></span>
+                        <span class="hovering mail profile-element">Почта
+                        <span class="hovering status">новых нет</span></span>
+                        <span class="hovering write-letter profile-element">Написать письмо</span>
+                        <span class="hovering disk profile-element">Диск</span>
+                    </div>
+                </div>
+            </div>
+            <div class="middle">
+                <article class="news">
+                    <h1>
+                        <a href="https://news.yandex.ru/" class="mass-media hovering">Сейчас в
+                            СМИ</a>
+                        <a href="https://news.yandex.ru/Yekaterinburg" class="hovering local-news">в
+                            Екатеринбурге</a>
+                    </h1>
+                    <div class="date dm">19 ноября, воскресенье
+                        <span class="hovering time date">13:42</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a
+                                href="https://news.yandex.ru/yandsearch"
+                                class="news-links hovering">
+                                Порошенко назвал Украину космической державой
+                            </a>
+                        </li>
+                        <li><a
+                            href="https://news.yandex.ru/yandsearch"
+                            class="news-links hovering">Мугабе отстранили с поста главы правящей
+                            партии Зимбабве</a></li>
+                        <li><a
+                            href="https://news.yandex.ru/yandsearch"
+                            class="news-links hovering">СМИ узнали о планах США выделить Украине $47
+                            млн на
+                            оружие</a></li>
+                        <li><a
+                            href="https://news.yandex.ru/yandsearch"
+                            class="news-links hovering">В Польше связали действия КНДР с
+                            «агрессивным
+                            поведением» России</a></li>
+                        <li><a
+                            href="https://news.yandex.ru/yandsearch"
+                            class="news-links hovering">В сети появилось видео первого полета
+                            «летающего
+                            радара» А-100</a></li>
+                    </ul>
+                    <span class="currency hovering values">USD ЦБ</span>
+                    <span class="currency-value values">59,63</span>
+                    <span class="currency hovering values">EUR ЦБ</span>
+                    <span class="currency-value values">70,36</span>
+                    <span class="currency hovering values">НЕФТЬ</span>
+                    <span class="currency-value values">62,74</span>
+                    <span class="growth values">+2,13%</span>
+                </article>
+                <div class="app-adv">
+                    <div class="banner hovering">
+                        <span class="age">0+</span>
+                        <a href="https://chrome.google.com/webstore/detail/"
+                            class="themes hovering">
+                            <span class="half-phrase">Красивые фоны</span>
+                            <span class="half-phrase">для вашего браузера</span>
+                            <span class="caption">Элементы Яндекса</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-left">
+                <div class="label"></div>
+            </div>
+            <section class="middle-center">
+                <h2>Center</h2>
+                <div class="categories">
+                    <a href="https://yandex.ru/video/" class="category hovering">Видео</a>
+                    <a href="https://yandex.ru/images/" class="category hovering">Картинки</a>
+                    <a href="https://news.yandex.ru/" class="category hovering">Новости</a>
+                    <a href="https://yandex.ru/maps/" class="category hovering">Карты</a>
+                    <a href="https://market.yandex.ru/" class="category hovering">Маркет</a>
+                    <a href="https://translate.yandex.ru/" class="category hovering">Переводчик</a>
+                    <a href="https://music.yandex.ru/home/" class="category hovering">Музыка</a>
+                    <a href="https://yandex.ru/all/" class="category hovering">ещё</a>
+                </div>
+                <div class="search-line" id="search">
+                    <input type="text" required>
+                    <div class="mic-icon search-icon"></div>
+                    <div class="keyboard-icon search-icon"></div>
+                    <a href="#search" class="search-button">
+                        <div class="button-text">Найти</div>
+                    </a>
+                </div>
+                <div class="suggestion-line">Найдется всё. Например,<a href="#search"
+                    class="suggestion hovering">сколько колец у сатурна</a>
+                </div>
+            </section>
+            <div class="middle-bottom">
+                <span class="long-banner"></span>
+                <div class="columns">
+                    <input type="checkbox" checked name="selector" class="menu menu1" id="setting">
+                    <input type="checkbox" checked name="selector" class="menu menu2" id="setting1">
+                    <input type="checkbox" checked name="selector" class="menu menu3" id="setting2">
+                    <input type="checkbox" checked name="selector" class="menu menu4" id="setting3">
+                    <input type="checkbox" checked name="selector" class="menu menu5" id="setting4">
+                    <input type="checkbox" checked name="selector" class="menu menu6" id="setting5">
+                    <input type="checkbox" checked name="selector" class="menu menu7" id="setting6">
+                    <input type="checkbox" checked name="selector" class="menu menu8" id="setting7">
+                    <div class="weather-wrapper table-wrap">
+                        <div class="weather-block block">
+                            <a href="https://yandex.ru/pogoda/yekaterinburg"
+                                class="weather hovering block-header">
+                                Погода
+                            </a>
+                            <a href="https://yandex.ru/pogoda/yekaterinburg"
+                                class="block-element cloud"></a>
+                            <a href="https://yandex.ru/pogoda/yekaterinburg"
+                                class="bold-value hovering block-element">
+                                -2 &deg;
+                            </a>
+                            <a href="https://yandex.ru/pogoda/yekaterinburg"
+                                class="day-time-degree night hovering block-element">
+                                Ночь -2,
+                            </a>
+                            <a href="https://yandex.ru/pogoda/yekaterinburg"
+                                class="day-time-degree evening hovering block-element">
+                                утро -2
+                            </a>
+                        </div>
+                    </div>
+                    <div class="visiting-wrapper table-wrap">
+                        <div class="frequently-visiting block">
+                            <a href="https://yandex.ru/all"
+                                class="hovering block-header visiting-header">
+                                Посещаемое
+                            </a>
+                            <div class="text-line">
+                                <a href="https://market.yandex.ru/"
+                                    class="hovering block-element bold-element">
+                                    Маркет
+                                </a>
+                                <span class="dash block-element">&mdash;</span>
+                                <a href="https://market.yandex.ru/catalog/54913"
+                                    class="hovering block-element">
+                                    стиральные машины
+                                </a>
+                            </div>
+                            <div class="text-line">
+                                <a href="https://market.yandex.ru/"
+                                    class="hovering block-element bold-element">
+                                    Авто.ру
+                                </a>
+                                <span class="dash block-element">&mdash;</span>
+                                <a href="https://auto.ru/ekaterinburg/cars/hyundai/tucson/20535568/new/"
+                                    class="hovering block-element">
+                                    обновление Туссан
+                                </a>
+                            </div>
+                            <div class="text-line">
+                                <a href="https://realty.yandex.ru/"
+                                    class="hovering block-element bold-element">
+                                    Недвижимость
+                                </a>
+                                <span class="dash block-element">&mdash;</span>
+                                <a href="https://realty.yandex.ru/ekaterinburg/kupit/novostrojka"
+                                    class="hovering block-element">
+                                    просторная однушка
+                                </a>
+                            </div>
+                            <div class="text-line">
+                                <a href="https://rabota.yandex.ru/"
+                                    class="hovering block-element bold-element">
+                                    Работа
+                                </a>
+                                <span class="dash block-element">&mdash;</span>
+                                <a href="https://rabota.yandex.ru/search"
+                                    class="hovering block-element">
+                                    сотрудник склада
+                                </a>
+                            </div>
+                            <div class="text-line">
+                                <a href="https://taxi.yandex.ru"
+                                    class="hovering block-element bold-element">
+                                    Такси
+                                </a>
+                                <span class="dash block-element">&mdash;</span>
+                                <a href="https://taxi.yandex.ru/" class="hovering block-element">
+                                    экономные поездки
+                                </a>
+                            </div>
+                            <div class="text-line">
+                                <a href="https://yandex.ru/video/"
+                                    class="hovering block-element bold-element">
+                                    Видео
+                                </a>
+                                <span class="dash block-element">&mdash;</span>
+                                <a href="https://yandex.ru/video/search"
+                                    class="hovering block-element">
+                                    любимые сериалы
+                                </a>
+                            </div>
+                            <div class="text-line">
+                                <a href="https://yandex.ru/images/"
+                                    class="hovering block-element bold-element">
+                                    Картинки
+                                </a>
+                                <span class="dash block-element">&mdash;</span>
+                                <a href="https://yandex.ru/images/search"
+                                    class="hovering block-element">
+                                    гнедые лошади
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="anecdotes-wrapper table-wrap">
+                        <div class="anecdote-block block">
+                            <a href="https://yandex.ru/all"
+                                class="hovering block-header anecdote-header">
+                                Лучише анекдоты
+                            </a>
+                            <div class="anecdote-line">
+                                <input type="radio" checked name="selector" class="slider-1"
+                                    id="slide1">
+                                <input type="radio" name="selector" class="slider-2"
+                                    id="slide2">
+                                <input type="radio" name="selector" class="slider-3"
+                                    id="slide3">
+                                <input type="radio" name="selector" class="slider-4"
+                                    id="slide4">
+                                <input type="radio" name="selector" class="slider-5"
+                                    id="slide5">
+                                <label for="slide1" class="slider slide1">
+                                    <img src="icons/circ-arrow.png" alt="circ"
+                                        class="label-img-1 label-img">
+                                    <span class="hovering show-more">Показать еще</span>
+                                </label>
+                                <label for="slide2" class="slider slide2">
+                                    <img src="icons/circ-arrow.png" alt="circ"
+                                        class="label-img-2 label-img">
+                                    <span class="hovering show-more">Показать еще</span>
+                                </label>
+                                <label for="slide3" class="slider slide3">
+                                    <img src="icons/circ-arrow.png" alt="circ"
+                                        class="label-img-2 label-img">
+                                    <span class="hovering show-more">Показать еще</span>
+                                </label>
+                                <label for="slide4" class="slider slide4 fixed-width">
+                                    <img src="icons/circ-arrow.png" alt="circ"
+                                        class="label-img-2 label-img">
+                                    <span class="hovering show-more">Показать еще</span>
+                                </label>
+                                <label for="slide5" class="slider slide5">
+                                    <img src="icons/circ-arrow.png" alt="circ"
+                                        class="label-img-2 label-img">
+                                    <span class="hovering show-more">Показать еще</span>
+                                </label>
+                                <span
+                                    class="anecdote1 anecdote">-Вас лечить хорошо или бесплатно?</span>
+                                <span class="anecdote2 anecdote">-хорошо или бесплатно?</span>
+                                <span
+                                    class="anecdote3 anecdote">-лечить хорошо или бесплатно?</span>
+                                <span class="anecdote4 anecdote">-Вас лечить хорошо ?</span>
+                                <span class="anecdote5 anecdote">-Вас или бесплатно?</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="traffic-wrapper table-wrap">
+                        <div class="traffic-jam block">
+                            <a href="https://yandex.ru/all"
+                                class="hovering block-header traffic-header">
+                                Пробки
+                            </a>
+                            <a href="https://yandex.ru/pogoda/yekaterinburg"
+                                class="block-element semaphore"></a>
+                            <a href="https://yandex.ru/pogoda/yekaterinburg"
+                                class="bold-value hovering block-element">
+                                2 балла
+                            </a>
+                            <div class="text-line">
+                                <a href="https://yandex.ru/pogoda/yekaterinburg"
+                                    class="hovering block-element">
+                                    Дороги почти свободны
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tv-wrapper table-wrap">
+                        <div class="tv-program block">
+                            <a href="https://yandex.ru/all"
+                                class="hovering block-header traffic-header">
+                                Телепрограмма
+                            </a>
+                            <a href="https://yandex.ru/pogoda/yekaterinburg"
+                                class="block-element tv-button"></a>
+                            <div class="text-line">
+                                <span class="tv-time block-element">21:30</span>
+                                <a class="program-name hovering block-element">Большие деньги</a>
+                                <a class="chanel hovering block-element">Первый</a>
+                            </div>
+                            <div class="text-line">
+                                <span class="tv-time block-element">21:45</span>
+                                <a class="program-name hovering block-element">Водить по-русски</a>
+                                <a class="chanel hovering block-element">РЕН ТВ</a>
+                            </div>
+                            <div class="text-line">
+                                <span class="tv-time block-element">22:00</span>
+                                <a class="program-name hovering block-element">Известия</a>
+                                <a class="chanel hovering block-element">Пятый канал</a>
+                            </div>
+                            <div class="text-line">
+                                <span class="tv-time block-element">22:00</span>
+                                <a class="program-name hovering block-element">События</a>
+                                <a class="chanel hovering block-element">ТВ Центр</a>
+                            </div>
+                            <div class="text-line">
+                                <span class="tv-time block-element">22:00</span>
+                                <a class="program-name hovering block-element">Полицейский с
+                                    Рублёвки</a>
+                                <a class="chanel hovering block-element">ТНТ</a>
+                            </div>
+                            <div class="text-line">
+                                <span class="tv-time block-element">22:15</span>
+                                <a class="program-name hovering block-element">Кости</a>
+                                <a class="chanel hovering block-element">ТВ-3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="auto-news-wrapper table-wrap">
+                        <a href="https://yandex.ru/all"
+                            class="hovering block-header auto-news-header">
+                            Автомобильные новости
+                        </a>
+                        <div class="news-auto-block block">
+                            <div class="text-line">
+                                <a class="program-name hovering block-element">
+                                    Коматозники Коматозники Коматозники Коматозники Коматозники
+                                    Коматозники Коматозники Коматозники Коматозники Коматозники
+                                    Коматозники Коматозники Коматозники Коматозники
+                                </a>
+                                <span class="grey-text">4:20</span>
+                            </div>
+                            <div class="text-line">
+                                <a class="program-name hovering block-element">
+                                    Тор: Рагнарёк Тор: Рагнарёк Тор: Рагнарёк Тор: Рагнарёк Тор:
+                                    Рагнарёк Тор: Рагнарёк Тор: Рагнарёк Тор: Рагнарёк Тор: Рагнарёк
+                                    Тор: Рагнарёк Тор: Рагнарёк Тор: Рагнарёк Тор: Рагнарёк Тор:
+                                    Рагнарёк Тор: Рагнарёк
+                                </a>
+                                <span class="grey-text">14:20</span>
+                            </div>
+                            <div class="text-line">
+                                <a class="program-name hovering block-element">
+                                    Лига справедливости
+                                </a>
+                                <span class="grey-text">12:22</span>
+                            </div>
+                            <div class="text-line">
+                                <a class="program-name hovering block-element">
+                                    Последний богатырь Последний богатырь Последний богатырь
+                                    Последний богатырь Последний богатырь Последний богатырь
+                                    Последний богатырь Последний богатырь Последний богатырь
+                                    Последний богатырь Последний богатырь Последний богатырь
+                                    Последний богатырь Последний богатырь Последний богатырь
+                                    Последний богатырь Последний богатырь Последний богатырь
+                                    Последний богатырь Последний богатырь Последний богатырь
+                                    Последний богатырь Последний богатырь Последний богатырь
+                                    Последний богатырь Последний богатырь Последний богатырь
+                                    Последний богатырь Последний богатырь Последний богатырь
+                                </a>
+                                <span class="grey-text">10:00</span>
+                            </div>
+                            <div class="text-line">
+                                <a class="program-name hovering block-element">
+                                    Последний богатырь
+                                </a>
+                                <span class="grey-text">10:50</span>
+                            </div>
+                            <div class="text-line">
+                                <a class="program-name hovering block-element">
+                                    Последний богатырь
+                                </a>
+                                <span class="grey-text">11:15</span>
+                            </div>
+                            <div class="text-line">
+                                <a class="program-name hovering block-element">
+                                    Последний богатырь тырь тырь тырь тырь тырь тырь тырь тырь тырь
+                                    тырь тырь тырь тырь тырь тырь тырь тырь тырь тырь тырь тырь тырь
+                                    тырь тырь тырь тырь тырь тырь тырь тырь тырь тырь тырь тырь тырь
+                                </a>
+                                <span class="grey-text">21:40</span>
+                            </div>
+                            <span class="top-blur-box"></span>
+                            <span class="bot-blur-box"></span>
+                        </div>
+                    </div>
+                    <div class="map-wrapper table-wrap">
+                        <div class="city-map block">
+                            <a href="https://yandex.ru/all"
+                                class="hovering block-header traffic-header">
+                                Карта Екатеринбурга
+                            </a>
+                            <div class="text-line block-element">
+                                <a class="program-name hovering bold-element block-element">Такси
+                                </a>
+                                <a class="chanel hovering bold-element block-element">Расписания</a>
+                            </div>
+                            <div class="text-line"><a
+                                class="chanel hovering block-element bold-element">Междугородние
+                                автобусы</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adv-poster-wrap table-wrap">
+                        <div class="poster-adv block">
+                            <a href="https://yandex.ru/all"
+                                class="hovering block-header poster-header">
+                                Афиша
+                            </a>
+                            <div class="text-line">
+                                <a class="program-name hovering block-element">
+                                    Коматозники
+                                </a>
+                                <span class="grey-text">премьера в чт</span>
+                            </div>
+                            <div class="text-line">
+                                <a class="program-name hovering block-element">
+                                    Тор: Рагнарёк
+                                </a>
+                                <span class="grey-text">фентези</span>
+                            </div>
+                            <div class="text-line">
+                                <a class="program-name hovering block-element">
+                                    Лига справедливости
+                                </a>
+                                <span class="grey-text">фантастика</span>
+                            </div>
+                            <div class="text-line">
+                                <a class="program-name hovering block-element">
+                                    Последний богатырь
+                                </a>
+                                <span class="grey-text">приключения</span>
+                            </div>
+                            <div class="text-line">
+                                <a href="https://realty.yandex.ru/"
+                                    class="hovering block-element bold-element">
+                                    Концерта
+                                </a>
+                                <span class="dash block-element">&mdash;</span>
+                                <a href="https://realty.yandex.ru/ekaterinburg/kupit/novostrojka/"
+                                    class="hovering block-element">
+                                    Макс Барских
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class=" right"></aside>
+        </main>
+    </body>
 </html>
