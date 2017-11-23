@@ -9,7 +9,10 @@ a
     display: grid;
     grid-template-columns: 1.5fr 880px 1.5fr;
     grid-template-rows: 70px 220px 100px 420px;
-    grid-template-areas: 'd d d' 'a b c' 'e f c' 'v h c';
+    grid-template-areas: 'd d d'
+        'a b c'
+        'e f c'
+        'v h c';
 }
 
 .input-line
@@ -443,7 +446,8 @@ li
     display: grid;
     grid-template-columns: 900px;
     grid-template-rows: 100px 690px;
-    grid-template-areas: 'ha' 'hb';
+    grid-template-areas: 'ha'
+        'hb';
 }
 
 .long-banner
@@ -777,7 +781,9 @@ input[type='radio']
     display: grid;
     grid-template-rows: 2fr 1fr 2fr;
 
-    grid-template-areas: 'fa' 'fb' 'fc';
+    grid-template-areas: 'fa'
+        'fb'
+        'fc';
 }
 
 .search-line
