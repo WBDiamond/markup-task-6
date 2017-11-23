@@ -862,14 +862,6 @@ input[type='radio']
     height: 0;
     border: 18px solid transparent;
     border-left: 10px solid #ffdb4d;
-    /*content: '';*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*right: 49px;*/
-    /*width: 49px;*/
-    /*height: 36px;*/
-    /*transform: scale(.71) rotate(45deg);*/
-    /*background-color: #ffdb4d;*/
 }
 
 input:valid ~ .search-icon
