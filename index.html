@@ -7,41 +7,11 @@
     </head>
     <body>
         <main class="layout">
-            <div class="top-line">
+            <section class="top-line">
+                <h1>Top line</h1>
                 <a href="https://yandex.ru/tune" class="location top-line-items hovering">
                     <span class="arrow">➤</span>Екатеринбург</a>
-                <div class="profile-wrapper">
-                    <div class="dropdown">
-                        <span class="settings hovering">Настройкa</span>
-                        <div class="dropdown-content">
-                            <div class="inputs">
-                                <label for="setting">
-                                    <span class="hovering">Погода</span>
-                                </label>
-                                <label for="setting1">
-                                    <span class="hovering">Посещаемое</span>
-                                </label>
-                                <label for="setting2">
-                                    <span class="hovering">Анекдоты</span>
-                                </label>
-                                <label for="setting3">
-                                    <span class="hovering">Пробки</span>
-                                </label>
-                                <label for="setting4">
-                                    <span class="hovering">Телепрограмма</span>
-                                </label>
-                                <label for="setting5">
-                                    <span class="hovering">Автомобильные новости</span>
-                                </label>
-                                <label for="setting6">
-                                    <span class="hovering">Карта Екатеринбурга</span>
-                                </label>
-                                <label for="setting7">
-                                    <span class="hovering">Афиша</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
+                <aside class="profile-wrapper">
                     <div class="profile">
                         <span class="mail-address profile-element hovering">
                             360mlgnoscope420blazeit@yandex.ru</span>
@@ -51,18 +21,19 @@
                         <span class="hovering write-letter profile-element">Написать письмо</span>
                         <span class="hovering disk profile-element">Диск</span>
                     </div>
-                </div>
-            </div>
-            <div class="middle">
+                </aside>
+            </section>
+            <section class="middle">
+                <h1>Середина</h1>
                 <article class="news">
-                    <h1>
+                    <h2>
                         <a href="https://news.yandex.ru/" class="mass-media hovering">Сейчас в
                             СМИ</a>
                         <a href="https://news.yandex.ru/Yekaterinburg" class="hovering local-news">в
                             Екатеринбурге</a>
-                    </h1>
+                    </h2>
                     <div class="date dm">19 ноября, воскресенье
-                        <span class="hovering time date">13:42</span>
+                        <time class="hovering time date">13:42</time>
                     </div>
                     <ul>
                         <li>
@@ -105,19 +76,22 @@
                         <span class="age">0+</span>
                         <a href="https://chrome.google.com/webstore/detail/"
                             class="themes hovering">
-                            <span class="half-phrase">Красивые фоны</span>
-                            <span class="half-phrase">для вашего браузера</span>
+                            Красивые фоны<br>
+                            для вашего браузера</a>
+                        <a href="https://chrome.google.com/webstore/detail/"
+                            class="themes">
                             <span class="caption">Элементы Яндекса</span>
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="middle-left">
-                <div class="label"></div>
-            </div>
+            </section>
+            <section class="middle-left">
+                <h1>Середина слева</h1>
+                <span class="label"></span>
+            </section>
             <section class="middle-center">
-                <h2>Center</h2>
-                <div class="categories">
+                <h1>Center</h1>
+                <nav class="categories">
                     <a href="https://yandex.ru/video/" class="category hovering">Видео</a>
                     <a href="https://yandex.ru/images/" class="category hovering">Картинки</a>
                     <a href="https://news.yandex.ru/" class="category hovering">Новости</a>
@@ -126,11 +100,11 @@
                     <a href="https://translate.yandex.ru/" class="category hovering">Переводчик</a>
                     <a href="https://music.yandex.ru/home/" class="category hovering">Музыка</a>
                     <a href="https://yandex.ru/all/" class="category hovering">ещё</a>
-                </div>
+                </nav>
                 <div class="search-line" id="search">
                     <input type="text" required>
-                    <div class="mic-icon search-icon"></div>
-                    <div class="keyboard-icon search-icon"></div>
+                    <span class="mic-icon search-icon"></span>
+                    <span class="keyboard-icon search-icon"></span>
                     <a href="#search" class="search-button">
                         <div class="button-text">Найти</div>
                     </a>
@@ -139,9 +113,39 @@
                     class="suggestion hovering">сколько колец у сатурна</a>
                 </div>
             </section>
-            <div class="middle-bottom">
+            <section class="middle-bottom">
+                <h1>Средеина низ</h1>
                 <span class="long-banner"></span>
                 <div class="columns">
+                    <input type="checkbox" class="settings-check" id="settings-check">
+                    <label class="settings" for="settings-check">
+                        <span class="hovering">Настройкa</span>
+                    </label>
+                    <div class="dropdown-content"></div>
+                    <label class="widget-label widget-label1" for="setting">
+                        <span class="hovering">Погода</span>
+                    </label>
+                    <label class="widget-label widget-label2" for="setting1">
+                        <span class="hovering">Посещаемое</span>
+                    </label>
+                    <label class="widget-label widget-label3" for="setting2">
+                        <span class="hovering">Анекдоты</span>
+                    </label>
+                    <label class="widget-label widget-label4" for="setting3">
+                        <span class="hovering">Пробки</span>
+                    </label>
+                    <label class="widget-label widget-label5" for="setting4">
+                        <span class="hovering">Телепрограмма</span>
+                    </label>
+                    <label class="widget-label widget-label6" for="setting5">
+                        <span class="hovering">Автомобильные новости</span>
+                    </label>
+                    <label class="widget-label widget-label7" for="setting6">
+                        <span class="hovering">Карта Екатеринбурга</span>
+                    </label>
+                    <label class="widget-label widget-label8" for="setting7">
+                        <span class="hovering">Афиша</span>
+                    </label>
                     <input type="checkbox" checked name="selector" class="menu menu1" id="setting">
                     <input type="checkbox" checked name="selector" class="menu menu2" id="setting1">
                     <input type="checkbox" checked name="selector" class="menu menu3" id="setting2">
@@ -151,11 +155,13 @@
                     <input type="checkbox" checked name="selector" class="menu menu7" id="setting6">
                     <input type="checkbox" checked name="selector" class="menu menu8" id="setting7">
                     <div class="weather-wrapper table-wrap">
-                        <div class="weather-block block">
-                            <a href="https://yandex.ru/pogoda/yekaterinburg"
-                                class="weather hovering block-header">
-                                Погода
-                            </a>
+                        <article class="weather-block block">
+                            <h2 class="columns-header">
+                                <a href="https://yandex.ru/pogoda/yekaterinburg"
+                                    class="weather hovering block-header">
+                                    Погода
+                                </a>
+                            </h2>
                             <a href="https://yandex.ru/pogoda/yekaterinburg"
                                 class="block-element cloud"></a>
                             <a href="https://yandex.ru/pogoda/yekaterinburg"
@@ -170,14 +176,14 @@
                                 class="day-time-degree evening hovering block-element">
                                 утро -2
                             </a>
-                        </div>
+                        </article>
                     </div>
                     <div class="visiting-wrapper table-wrap">
-                        <div class="frequently-visiting block">
-                            <a href="https://yandex.ru/all"
+                        <article class="frequently-visiting block">
+                            <h2 class="columns-header"><a href="https://yandex.ru/all"
                                 class="hovering block-header visiting-header">
                                 Посещаемое
-                            </a>
+                            </a></h2>
                             <div class="text-line">
                                 <a href="https://market.yandex.ru/"
                                     class="hovering block-element bold-element">
@@ -255,14 +261,14 @@
                                 </a>
                             </div>
 
-                        </div>
+                        </article>
                     </div>
                     <div class="anecdotes-wrapper table-wrap">
-                        <div class="anecdote-block block">
-                            <a href="https://yandex.ru/all"
+                        <article class="anecdote-block block">
+                            <h2 class="columns-header"><a href="https://yandex.ru/all"
                                 class="hovering block-header anecdote-header">
                                 Лучише анекдоты
-                            </a>
+                            </a></h2>
                             <div class="anecdote-line">
                                 <input type="radio" checked name="selector" class="slider-1"
                                     id="slide1">
@@ -307,14 +313,14 @@
                                 <span class="anecdote4 anecdote">-Вас лечить хорошо ?</span>
                                 <span class="anecdote5 anecdote">-Вас или бесплатно?</span>
                             </div>
-                        </div>
+                        </article>
                     </div>
                     <div class="traffic-wrapper table-wrap">
-                        <div class="traffic-jam block">
-                            <a href="https://yandex.ru/all"
+                        <article class="traffic-jam block">
+                            <h2 class="columns-header"><a href="https://yandex.ru/all"
                                 class="hovering block-header traffic-header">
                                 Пробки
-                            </a>
+                            </a></h2>
                             <a href="https://yandex.ru/pogoda/yekaterinburg"
                                 class="block-element semaphore"></a>
                             <a href="https://yandex.ru/pogoda/yekaterinburg"
@@ -327,14 +333,14 @@
                                     Дороги почти свободны
                                 </a>
                             </div>
-                        </div>
+                        </article>
                     </div>
                     <div class="tv-wrapper table-wrap">
-                        <div class="tv-program block">
-                            <a href="https://yandex.ru/all"
+                        <article class="tv-program block">
+                            <h2 class="columns-header"><a href="https://yandex.ru/all"
                                 class="hovering block-header traffic-header">
                                 Телепрограмма
-                            </a>
+                            </a></h2>
                             <a href="https://yandex.ru/pogoda/yekaterinburg"
                                 class="block-element tv-button"></a>
                             <div class="text-line">
@@ -368,13 +374,13 @@
                                 <a class="program-name hovering block-element">Кости</a>
                                 <a class="chanel hovering block-element">ТВ-3</a>
                             </div>
-                        </div>
+                        </article>
                     </div>
                     <div class="auto-news-wrapper table-wrap">
-                        <a href="https://yandex.ru/all"
+                        <h2 class="columns-header"><a href="https://yandex.ru/all"
                             class="hovering block-header auto-news-header">
                             Автомобильные новости
-                        </a>
+                        </a></h2>
                         <div class="news-auto-block block">
                             <div class="text-line">
                                 <a class="program-name hovering block-element">
@@ -439,11 +445,11 @@
                         </div>
                     </div>
                     <div class="map-wrapper table-wrap">
-                        <div class="city-map block">
-                            <a href="https://yandex.ru/all"
+                        <article class="city-map block">
+                            <h2 class="columns-header"><a href="https://yandex.ru/all"
                                 class="hovering block-header traffic-header">
                                 Карта Екатеринбурга
-                            </a>
+                            </a></h2>
                             <div class="text-line block-element">
                                 <a class="program-name hovering bold-element block-element">Такси
                                 </a>
@@ -453,14 +459,14 @@
                                 class="chanel hovering block-element bold-element">Междугородние
                                 автобусы</a>
                             </div>
-                        </div>
+                        </article>
                     </div>
                     <div class="adv-poster-wrap table-wrap">
-                        <div class="poster-adv block">
-                            <a href="https://yandex.ru/all"
+                        <article class="poster-adv block">
+                            <h2 class="columns-header"><a href="https://yandex.ru/all"
                                 class="hovering block-header poster-header">
                                 Афиша
-                            </a>
+                            </a></h2>
                             <div class="text-line">
                                 <a class="program-name hovering block-element">
                                     Коматозники
@@ -496,11 +502,11 @@
                                     Макс Барских
                                 </a>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
-            </div>
-            <aside class=" right"></aside>
+            </section>
+            <aside class="right"></aside>
         </main>
     </body>
 </html>

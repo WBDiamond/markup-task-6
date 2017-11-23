@@ -1,3 +1,9 @@
+
+a
+{
+    outline-color: #fc0;
+}
+
 .layout
 {
     display: grid;
@@ -15,6 +21,11 @@
 .menu
 {
     display: none;
+    position: absolute;
+    right: 120px;
+    width: 15px;
+    height: 15px;
+    z-index: 9999;
 }
 
 .menu1:not(:checked) ~ .weather-wrapper
@@ -64,9 +75,61 @@
     justify-content: flex-start;
 }
 
-.dropdown
+.widget-label
 {
-    position: relative;
+    position: absolute;
+    text-align: left;
+    right: 150px;
+    display: none;
+    z-index: 1;
+}
+
+.widget-label1,
+.menu1
+{
+    top: 45px;
+}
+
+.widget-label2,
+.menu2
+{
+    top: 65px;
+}
+
+.widget-label3,
+.menu3
+{
+    top: 85px;
+}
+
+.widget-label4,
+.menu4
+{
+    top: 105px;
+}
+
+.widget-label5,
+.menu5
+{
+    top: 125px;
+}
+
+.widget-label6,
+.menu6
+{
+    top: 145px;
+}
+
+.widget-label7,
+.menu7
+{
+    top: 165px;
+}
+
+.widget-label8,
+.menu8
+{
+    top: 185px;
 }
 
 .dropdown-content
@@ -76,15 +139,43 @@
     right: 85px;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 260px;
+    width: 260px;
+    height: 180px;
     box-shadow: 0 10px 100px 1px #000;
     padding: 12px 16px;
     z-index: 1;
 }
 
-.dropdown:hover .dropdown-content
+.settings-check:checked ~ .dropdown-content,
+.settings-check:checked ~ .widget-label,
+.settings-check:checked ~ .menu
 {
     display: block;
+}
+
+.settings-check:checked + .settings
+{
+    display: none;
+}
+
+.settings-check
+{
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.settings-check:checked:after
+{
+    display: block;
+    content: 'X';
+    position: absolute;
+    cursor: pointer;
+    top: 30px;
+    right: 350px;
+    z-index: 100;
 }
 
 .settings
@@ -225,25 +316,20 @@
     text-align: left;
     left: 0;
     top: 100px;
+    color: #0054b9;
+    font-weight: 400;
+    font-size: 19px;
 
 }
 
 .caption
 {
     position: absolute;
+    width: 300px;
     left: 0;
     top: 60px;
     color: #000;
     font-size: 14px;
-}
-
-.half-phrase
-{
-    color: #0054b9;
-    white-space: nowrap;
-    transition: color .15s ease-out;
-    font-weight: 400;
-    font-size: 19px;
 }
 
 .age
@@ -265,7 +351,7 @@
     font-size: 10px;
 }
 
-h1
+h2
 {
     display: inline-block;
     margin: 4px;
@@ -356,7 +442,7 @@ li
     grid-area: h;
     display: grid;
     grid-template-columns: 900px;
-    grid-template-rows: 100px 680px;
+    grid-template-rows: 100px 690px;
     grid-template-areas: 'ha' 'hb';
 }
 
@@ -547,6 +633,7 @@ li
 
 .show-more
 {
+    font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     bottom: 3px;
     left: 20px;
@@ -570,6 +657,7 @@ li
 
 .anecdote
 {
+    font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
 
@@ -638,9 +726,14 @@ li
     display: inline;
 }
 
-h2
+h1
 {
     display: none;
+}
+
+.columns-header
+{
+    margin-left: 0;
 }
 
 input[type='radio']
@@ -764,18 +857,41 @@ input[type='radio']
 
 .search-button
 {
-    width: 90px;
+    width: 80px;
     height: 36px;
-    background: url('icons/arrow.png') no-repeat;
 }
 
 .button-text
 {
+    position: absolute;
+    z-index: 10;
     color: #000;
     line-height: 36px;
     text-align: center;
     margin-left: -6px;
+    width: 60px;
     font-size: 16px;
+    background-color: #ffdb4d;
+}
+
+.button-text:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -28px;
+    width: 0;
+    height: 0;
+    border: 18px solid transparent;
+    border-left: 10px solid #ffdb4d;
+    /*content: '';*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 49px;*/
+    /*width: 49px;*/
+    /*height: 36px;*/
+    /*transform: scale(.71) rotate(45deg);*/
+    /*background-color: #ffdb4d;*/
 }
 
 input:valid ~ .search-icon
